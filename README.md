@@ -28,10 +28,11 @@ Em `src/jogo.js`, exporte as funções síncronas abaixo. Uma carta é `{ valor,
 - **T06** cobre os quatro aumentos, o valor anterior em cada recusa e o limite de 12.
 - **T07–T08** cobrem mão de onze aceita e corrida, mão de ferro e bloqueio de aumentos.
 - **T09** verifica placares abaixo da meta, de exatamente 12 e acima de 12.
+- **T10** garante que um 3 comum não vence uma manilha, em qualquer naipe ou dupla.
 
 ## Execução
 
-Com Node.js 24, rode `npm test` na raiz. A entrega registra a etapa **Red** do TDD. Sem `src/jogo.js`, a suíte retorna código 1 com `ERR_MODULE_NOT_FOUND`. Crie esse módulo com o contrato acima e repita `npm test` para executar as asserções.
+Com Node.js 24, rode `npm install` e `npm test` na raiz para executar os testes com Jest. Esta entrega mantém a etapa **Red** do TDD: sem `src/jogo.js`, a suíte falha por falta do módulo. Crie esse módulo com o contrato acima e repita `npm test` para executar as asserções.
 
 ## Colaborador
 
